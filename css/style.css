@@ -1,7 +1,7 @@
 body {
-  background-color: gold;
+  background-color: rgba(118, 251, 224, 0.979);
   font-family: "Yellowtail";
-  height: 600px;
+  height: 800px;
   width: 100%;
 }
 
@@ -24,8 +24,8 @@ body {
   background-color: white;
   display: inline-block;
   border-radius: 70%;
-  transform: rotate(45deg);
-  margin: 60px;
+  /* transform: rotate(45deg); */
+  margin: 40px;
   box-shadow: 0 2px 6px 2px;
   position: relative;
 }
@@ -36,8 +36,8 @@ body {
   border-radius: 70px;
   border: 40px solid;
   top: 50%;
-  left: 50%;
-  transform: translate(40%, 40%);
+  left: 40%;
+  transform: translate(50%, 50%);
   animation-name: eyesmove;
   position: absolute;
   animation-duration: 5s;
@@ -46,17 +46,36 @@ body {
   animation-direction: alternate;
 }
 
-/* .bee {
+.bee {
   background-image: url("/pic/6800_6_05.jpg");
-  height: 100px;
-  width: 100px;
-  background-position: right center; */
+  height: 200px;
+  width: 200px;
+  background-size: cover;
+  border-radius: 50%;
+  top: 100%;
+  transform: translate(50%, 50%);
+  animation-name: beemove;
+  position: absolute;
+  animation-duration: 5s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
+
 @keyframes eyesmove {
   from {
-    left: 10px;
+    left: 30px;
   }
   to {
-    left: 50px;
+    left: 90px;
+  }
+}
+
+@keyframes beemove {
+  from {
+    left: 0px;
+  }
+  to {
+    left: 90px;
   }
 }
