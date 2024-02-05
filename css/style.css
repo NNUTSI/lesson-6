@@ -1,0 +1,62 @@
+body {
+  background-color: gold;
+  font-family: "Yellowtail";
+  height: 600px;
+  width: 100%;
+}
+
+.title {
+  text-align: center;
+  margin-top: 100px;
+  color: crimson;
+  font-size: 100px;
+}
+.eyes {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+}
+.eye {
+  width: 300px;
+  height: 300px;
+  background-color: white;
+  display: inline-block;
+  border-radius: 70%;
+  transform: rotate(45deg);
+  margin: 60px;
+  box-shadow: 0 2px 6px 2px;
+  position: relative;
+}
+.eye-ball {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  border-radius: 70px;
+  border: 40px solid;
+  top: 50%;
+  left: 50%;
+  transform: translate(40%, 40%);
+  animation-name: eyesmove;
+  position: absolute;
+  animation-duration: 5s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+/* .bee {
+  background-image: url("/pic/6800_6_05.jpg");
+  height: 100px;
+  width: 100px;
+  background-position: right center; */
+}
+@keyframes eyesmove {
+  from {
+    left: 10px;
+  }
+  to {
+    left: 50px;
+  }
+}
